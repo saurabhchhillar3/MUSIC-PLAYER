@@ -1,0 +1,83 @@
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-player {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    width: 350px;
+    text-align: center;
+}
+
+.cover img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.track-info {
+    margin: 15px 0;
+}
+
+.track-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.track-info p {
+    font-size: 1em;
+    color: #bbb;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #1db954;
+}
