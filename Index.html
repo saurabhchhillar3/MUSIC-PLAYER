@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="cover">
+                <!-- Cover image for the track -->
+                <img id="cover-img" src="Badnam.webp" alt="Album Cover">
+            </div>
+            <div class="track-info">
+                <h2 id="track-name">Badnam</h2>
+                <p id="track-artist">Punjabi Track</p>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="progress" value="0" max="100">
+                <span id="total-duration">3:45</span>
+            </div>
+            <div class="controls">
+                <button id="shuffle" title="Shuffle"><i class="fas fa-random"></i></button>
+                <button id="prev" title="Previous"><i class="fas fa-step-backward"></i></button>
+                <button id="play-pause" title="Play/Pause"><i class="fas fa-play" id="play-pause-icon"></i></button>
+                <button id="next" title="Next"><i class="fas fa-step-forward"></i></button>
+                <button id="loop" title="Loop"><i class="fas fa-redo"></i></button>
+            </div>
+            <audio id="audio-player" src="Badnam.mp3"></audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
